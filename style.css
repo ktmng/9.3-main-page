@@ -63,17 +63,17 @@
 }
 #portfolio {
     color: rgb(229, 98, 11);
+    margin-top: 50px;
 }
 
 .grey-box { 
     border: 2px rgb(117, 117, 117) solid;
     border-radius: 10px;
     width: 90%;
-    justify-self: center;
     margin-bottom: 10px;
 }
-
 .orange-box { 
+    background-color: white;
     border: 2px rgb(255, 179, 128) solid;
     border-radius: 10px;
     width: 90%;
@@ -88,6 +88,7 @@
 .link {
     color: rgb(229, 98, 11); 
     text-decoration: none;
+    background-color: white;
 }
 .link:hover, .link:focus {
     color: rgb(6, 41, 94);
@@ -96,6 +97,7 @@
 }
 
 .blue-box {
+    background-color: white;
     border: 2px rgb(7, 52, 118) solid;
     border-radius: 10px;
     width: 90%;
@@ -109,6 +111,7 @@
 }
 .project-title {
     font-weight: bolder;
+    background-color: white;
 }
 
 /*MINI BIO PORTFOLIO MINI BIO PORTFOLIO MINI BIO PORTFOLIO MINI BIO */
@@ -128,9 +131,13 @@ footer {
 /*FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
 
 /* =======================TABLET START==========================*/
-@media screen and (min-width: 550px) {
-
-
-
+@media screen and (min-width: 750px) {
+.mini-bio-boxes {
+    max-width: 700px;
+}
+.portfolio-boxes {
+    width: 700px;
+}
+}
 
 
