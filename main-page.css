@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    position: relative;
+}
+main {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative; 
+    padding-bottom: 100px;
+}
+
+.nav {
+    background-color: grey;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.nav-button {
+    margin: 5px;
+}
+
+.title-text {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.mini-bio-content {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+#student-image, .project-image {
+    width: 70%;
+    height: 250px;
+    border: 2px grey solid;
+    margin-bottom: 15px;
+}
+.bio-text { 
+    border: 2px grey solid;
+    width: 70%;
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+.portfolio-content {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.project-text {
+    border: 2px black solid;
+    background-color: lightgrey;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+.technologies {
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    background-color: grey;
+    padding: 10px 0px 10px 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.fa {
+    margin: 0px 10px 0px 10px;
+}
+
+
+@media screen and (min-width: 480px) {
+    #student-image, .bio-text, .portfolio-content{
+        width: 70%;
+        max-width: 500px;
+    }
+    .portfolio {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .project-image, .project-text {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    #student-image, .bio-text, .portfolio-content{
+        width: 70%;
+        max-width: 700px;
+    }
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .portfolio-content { 
+        display: grid;
+        grid-template-columns: 55% 45%;
+        margin-bottom: 35px;
+    }
+    .project-image, .project-text {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    .project-text { 
+        max-height: 250px;
+        overflow: auto;
+    }
+
+
+}
